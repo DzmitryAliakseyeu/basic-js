@@ -40,7 +40,7 @@ function minesweeper(matrix) {
         for(let [dx, dy] of directions){
           let ni = i + dx;
           let ny = j + dy;
-          if(ni > 0 && ni < rows && ny > 0 && ny < cols){
+          if(ni >= 0 && ni < rows && ny >= 0 && ny < cols){
             result[ni][ny] += 1
           }
         }
